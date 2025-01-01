@@ -1,17 +1,20 @@
-# React + TypeScript + Vite
+# React Billiards Scorekeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This library provides a reusable React component for keeping score in a game of billiards (pool). It's written in TypeScript and supports both ES module imports and script tag inclusion.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Tracks scores for two players.
+- Allows setting the total number of balls.
+- Provides controls for incrementing and decrementing scores.
+- Displays the current player's turn.
+- Visually indicates the winner when the game ends.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### npm
 
-- Configure the top-level `parserOptions` property like this:
+
 
 ```js
 export default tseslint.config({

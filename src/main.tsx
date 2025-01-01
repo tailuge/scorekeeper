@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+
+import BilliardsScorekeeper from './BilliardsScorekeeper';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BilliardsScorekeeper initialPlayer1Score={0} initialPlayer2Score={0}   />
   </StrictMode>,
 )
