@@ -5,13 +5,13 @@
     ## Installation
 
     ```bash
-    npm install billiards-scorekeeper
+    npm install scorekeeper
     ```
     ## Usage
     ### React App
     ```tsx
     import React from 'react';
-    import Scorekeeper from 'billiards-scorekeeper';
+    import Scorekeeper from 'scorekeeper';
 
     const exampleState = [...];
     function App() {
@@ -20,11 +20,11 @@
     ```
     ### Vanilla JS
     ```html
-    <script src="https://unpkg.com/billiards-scorekeeper"></script>
+    <script src="https://unpkg.com/scorekeeper"></script>
     <script>
       const exampleState = [...];
       ReactDOM.createRoot(document.getElementById('root')).render(
-        React.createElement(BilliardsScorekeeper.default, { state: exampleState })
+        React.createElement(Scorekeeper.default, { state: exampleState })
       );
     </script>
     ```
