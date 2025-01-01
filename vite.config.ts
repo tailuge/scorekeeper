@@ -11,6 +11,7 @@ export default defineConfig({
       entry: './src/index.ts',
       name: 'BilliardsScorekeeper',
       fileName: (format) => `billiards-scorekeeper.${format}.js`,
+      formats: ['es', 'umd'],
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -21,5 +22,6 @@ export default defineConfig({
         },
       },
     },
+    outDir: 'dist',
   },
 });
