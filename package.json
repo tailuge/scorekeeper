@@ -1,6 +1,6 @@
 {
   "name": "billiards-scorekeeper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/billiards-scorekeeper.umd.js",
   "module": "./dist/billiards-scorekeeper.es.js",
   "types": "./dist/index.d.ts",
