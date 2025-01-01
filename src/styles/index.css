@@ -1,61 +1,42 @@
 .scorekeeper-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
 
-    .scorekeeper-table th,
-    .scorekeeper-table td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
-    }
+.scorekeeper-table th,
+.scorekeeper-table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
 
-    .scorekeeper-table th {
-      background-color: #f2f2f2;
-    }
+.scorekeeper-table th {
+  background-color: #f2f2f2;
+}
 
-    .score-column {
-      width: 50px;
-    }
+.scorekeeper-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
 
-    .ball {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      margin: 2px;
-    }
+.player-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
 
-    .ball-yellow {
-      background-color: yellow;
-    }
+.score-column {
+  width: 40px;
+  font-weight: bold;
+}
 
-    .ball-blue {
-      background-color: blue;
-    }
-
-    .ball-red {
-      background-color: red;
-    }
-
-    .ball-purple {
-      background-color: purple;
-    }
-
-    .ball-orange {
-      background-color: orange;
-    }
-
-    .foul-pill {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #ddd;
-      margin-left: 5px;
-    }
-
-    .foul-pill-active {
-      background-color: red;
-    }
+.foul-pill {
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 8px;
+  font-size: 0.8em;
+  margin-left: 4px;
+}
