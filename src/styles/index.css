@@ -1,0 +1,61 @@
+.scorekeeper-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .scorekeeper-table th,
+    .scorekeeper-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .scorekeeper-table th {
+      background-color: #f2f2f2;
+    }
+
+    .score-column {
+      width: 50px;
+    }
+
+    .ball {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 2px;
+    }
+
+    .ball-yellow {
+      background-color: yellow;
+    }
+
+    .ball-blue {
+      background-color: blue;
+    }
+
+    .ball-red {
+      background-color: red;
+    }
+
+    .ball-purple {
+      background-color: purple;
+    }
+
+    .ball-orange {
+      background-color: orange;
+    }
+
+    .foul-pill {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ddd;
+      margin-left: 5px;
+    }
+
+    .foul-pill-active {
+      background-color: red;
+    }
