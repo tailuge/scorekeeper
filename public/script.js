@@ -8,5 +8,5 @@ const exampleState = [
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
-      React.createElement(BilliardsScorekeeper.default, { state: exampleState })
+      React.createElement(Scorekeeper.default, { state: exampleState })
     );
