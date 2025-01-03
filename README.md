@@ -1,23 +1,9 @@
-# Billiards Scorekeeper
 
-A reusable React component for tracking billiards scores.
-   
-### Vanilla JS
-```html
-    <script src="https://unpkg.com/scorekeeper"></script>
-    <script>
-      const exampleState = [...];
-      ReactDOM.createRoot(document.getElementById('root')).render(
-        React.createElement(Scorekeeper.default, { state: exampleState })
-      );
-    </script>
-```
-## Publishing
-Build the library:
+
+A web component to display billiards shots like they do chess moves on liches.
+Another LLM coding experiment. Cline, Bolt.diy, Deepseek etc.
+
 ```bash
     npm run build
-```
-Publish to npm:
-```bash
     npm publish
 ```
