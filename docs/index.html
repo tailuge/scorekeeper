@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Billiards Scorekeeper</title>
-      <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-      <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-      <script src="https://unpkg.com/billiards-scorekeeper/dist/billiards-scorekeeper.umd.js"></script>
-    </head>
-    <body>
-      <div id="root"></div>
-      <script src="./script.js"></script>
-    </body>
-    </html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billiards Scorekeeper</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/billiards-scorekeeper/dist/billiards-scorekeeper.umd.js"></script>
+</head>
+
+<body>
+  <h1>ex</h1>
+  example:
+  <div id="root"></div>
+  <!--      <script src="./script.js"></script> -->
+  <script>
+
+    const exampleState = [
+      {
+        player1: { balls: ['yellow', 'blue', 'red'], foul: false },
+        player2: { balls: ['purple', 'orange'], foul: false },
+        scores: { player1: 3, player2: 2 }
+      },
+      {
+        player1: { balls: ['green', 'maroon'], foul: false },
+        player2: { balls: ['pink', 'cyan', 'brown'], foul: false },
+        scores: { player1: 5, player2: 4 }
+      },
+      {
+        player1: { balls: ['yellow', 'blue'], foul: true },
+        player2: { balls: ['purple', 'orange', 'green'], foul: false },
+        scores: { player1: 6, player2: 7 }
+      },
+      {
+        player1: { balls: ['maroon', 'pink', 'cyan'], foul: false },
+        player2: { balls: ['brown', 'yellow'], foul: false },
+        scores: { player1: 9, player2: 8 }
+      }
+    ];
+
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+      React.createElement(BilliardsScorekeeper.default, { state: exampleState })
+    );
+
+  </script>
+</body>
+
+</html>

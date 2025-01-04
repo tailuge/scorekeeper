@@ -1,4 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billiards Scorekeeper</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/billiards-scorekeeper/dist/billiards-scorekeeper.umd.js"></script>
+</head>
+
+<body>
+  <h1>ex</h1>
+  example:
+  <div id="root"></div>
+  <!--      <script src="./script.js"></script> -->
+  <script>
 
     const exampleState = [
       {
@@ -22,9 +39,14 @@
         scores: { player1: 9, player2: 8 }
       }
     ];
-    
+
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(
-      React.createElement(Scorekeeper.default, { state: exampleState })
+      React.createElement(BilliardsScorekeeper.default, { state: exampleState })
     );
+
+  </script>
+</body>
+
+</html>

@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     port: 3000
   },
-  base: '/examples',
+  base: '/',
   build: {
     lib: {
       entry: './src/index.ts',
@@ -25,4 +25,5 @@ export default defineConfig({
     },
     outDir: 'dist',
   },
+  define: { 'process.env.NODE_ENV': '"production"' },
 });
